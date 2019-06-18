@@ -1,6 +1,6 @@
 
 # vue-cli
-# 基于vue-cli3搭建的加手脚，在vue-cli3的基础上增加了api配置、axios配置、elementUi引入以及文件模块化
+基于vue-cli3搭建的加手脚，在vue-cli3的基础上增加了api配置、axios配置、elementUi引入以及文件模块化
 
 ## 安装依赖包
 ```
