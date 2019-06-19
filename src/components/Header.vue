@@ -1,12 +1,12 @@
 <template>
-  <div class="home-page">
-
+  <div class="header-com">
+    This is Header Component
   </div>
 </template>
 
 <script>
 export default {
-  data () {
+  data() {
     return {
 
     }
