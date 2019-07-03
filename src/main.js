@@ -17,8 +17,10 @@ Vue.use($http)
 Vue.use($nav)
 Vue.prototype.$globalLoading = GlobalLoading
 
+console.log('test console')
+
 new Vue({
   router,
   store,
   render: h => h(App)
-}).$mount('#app')
+}).$mount('#bpp')
