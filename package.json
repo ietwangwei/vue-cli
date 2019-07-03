@@ -8,7 +8,8 @@
     "online": "vue-cli-service build --env=online",
     "report": "vue-cli-service build --mode report",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "inspect": "vue-cli-service inspect > myWebpackConfig.js"
   },
   "dependencies": {
     "core-js": "^2.6.5",
