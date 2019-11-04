@@ -1,0 +1,15 @@
+.el-button {
+  &.el-button--primary {
+    background-color: rgba(24, 144, 255, 1 );
+    color: #FFF;
+  }
+
+  &.el-button--default {
+    background-color: #FFF;
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+.el-input__inner {
+  border-color: rgba(0, 0, 0, 0.149 );
+}
