@@ -1,6 +1,6 @@
 .el-button {
   &.el-button--primary {
-    background-color: rgba(24, 144, 255, 1 );
+    background-color: rgba(24, 144, 255, 1);
     color: #FFF;
   }
 
@@ -10,6 +10,18 @@
   }
 }
 
-.el-input__inner {
-  border-color: rgba(0, 0, 0, 0.149 );
+.el-input {
+  .el-input__inner {
+    border-color: rgba(0, 0, 0, 0.149);
+    padding-left: 12px;
+  }
+  input::-webkit-input-placeholder {
+    color: $color-in-icon;
+  }
+  input::-moz-input-placeholder {
+    color: $color-in-icon;
+  }
+  input::-ms-input-placeholder {
+    color: $color-in-icon;
+  }
 }

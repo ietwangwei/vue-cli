@@ -1,25 +1,29 @@
 <template>
   <div class="base">
-    <div class="title">ui统一规范</div>
-    <el-card
+    <div
       v-for="(item, index) in cards"
       :key="index"
-      class="box-card el-col-6"
+      class="el-col-6"
     >
-      <div slot="header" class="clearfix">
-        <span>{{ item.title }}</span>
-      </div>
-      <div
-        v-for="(option, subIndex) in item.options"
-        :key="subIndex"
-        class="text-item"
+      <el-card
+        class="box-card"
       >
-        <uiType
-          :type="item.type"
-          :option="option"
-        />
-      </div>
-    </el-card>
+        <div slot="header" class="clearfix">
+          <span>{{ item.title }}</span>
+        </div>
+        <div
+          v-for="(option, subIndex) in item.options"
+          :key="subIndex"
+          class="text-item"
+        >
+          <uiType
+            :type="item.type"
+            :option="option"
+          />
+        </div>
+      </el-card>
+    </div>
+    <div class="clear"></div>
   </div>
 </template>
 
@@ -43,6 +47,7 @@ export default {
 <style lang="scss">
 .base {
   .box-card {
+    min-height: 480px;
     margin-right: 24px;
     margin-bottom: 24px;
     text-align: left;
@@ -51,6 +56,11 @@ export default {
       margin-bottom: 10px;
       font-size: 12px;
     }
+  }
+
+  .base-chart {
+    width: 200px;
+    height: 200px;
   }
 }
 </style>

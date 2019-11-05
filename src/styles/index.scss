@@ -1,5 +1,8 @@
+@import './base';
 @import './htzh/index';
+@import './scroll';
 
 #app {
+  font-family: Microsoft YaHei;
   color: #666;
 }
