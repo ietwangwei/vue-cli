@@ -11,16 +11,10 @@
         <div slot="header" class="clearfix">
           <span>{{ item.title }}</span>
         </div>
-        <div
-          v-for="(option, subIndex) in item.options"
-          :key="subIndex"
-          class="text-item"
-        >
-          <uiType
-            :type="item.type"
-            :option="option"
-          />
-        </div>
+        <uiType
+          :type="item.type"
+          :option="item.option"
+        />
       </el-card>
     </div>
     <div class="clear"></div>
@@ -47,20 +41,11 @@ export default {
 <style lang="scss">
 .base {
   .box-card {
-    min-height: 480px;
+    height: 480px;
     margin-right: 24px;
     margin-bottom: 24px;
     text-align: left;
-
-    .text-item {
-      margin-bottom: 10px;
-      font-size: 12px;
-    }
-  }
-
-  .base-chart {
-    width: 200px;
-    height: 200px;
+    overflow-y: auto;
   }
 }
 </style>

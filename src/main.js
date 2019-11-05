@@ -7,6 +7,7 @@ import store from './store'
 import $http from './services/queryService'
 import $nav from './utils/nav'
 import GlobalLoading from './utils/globalLoading'
+import Confirm from '@/components/confirm/index'
 
 import './styles/'
 
@@ -15,6 +16,7 @@ Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use($http)
 Vue.use($nav)
+Vue.use(Confirm)
 Vue.prototype.$globalLoading = GlobalLoading
 
 console.log('test console')
