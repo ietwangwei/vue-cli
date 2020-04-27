@@ -50,6 +50,14 @@ module.exports = {
       ...plugins,
       ...config.plugins
     ]
+    return {
+      externals: {
+        'vue': 'Vue',
+        'vue-router': 'VueRouter',
+        'element-ui': 'ELEMENT',
+        'moment': 'moment'
+      }
+    }
   },
   chainWebpack: config => {
     config.resolve.alias
@@ -59,5 +67,6 @@ module.exports = {
       .add('.scss')
       .add('.vue')
       .end()
+    config.output.filename('[name]/[name].[hash].js').end()
   }
 }
