@@ -3,7 +3,6 @@ import Router from 'vue-router'
 
 import Login from './views/login.vue'
 import Home from './views/home.vue'
-import Base from './views/base.vue'
 
 Vue.use(Router)
 
@@ -13,7 +12,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/base'
+      redirect: '/login'
     },
     {
       path: '/login',
@@ -27,11 +26,6 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: Home
-    },
-    {
-      path: '/base',
-      name: 'base',
-      component: Base
     }
     // {
     //   path: '/404',
